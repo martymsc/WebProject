@@ -1,0 +1,47 @@
+html {
+    background-color: black;
+    color: white;
+
+}
+
+
+
+body{
+    text-align: center;
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+    
+}
+
+ /* CSS pro stylizaci seznamu odkazů */
+ .seznam-odkazu {
+    list-style-type: none; /* Skryje výchozí odrážky seznamu */
+    padding: 0; /* Odstraní výchozí odsazení */
+}
+
+.seznam-odkazu li {
+    display: inline; /* Odkazy na jednom řádku */
+    margin-right: 10px; /* Odsazení mezi odkazy */
+}
+
+.background-image {
+    background: url(Header\ backbround.png);
+    width: 640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+.hero-text {
+    text-align: center;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
