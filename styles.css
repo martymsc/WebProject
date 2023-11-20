@@ -1,18 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+
+
 html{
     color: grey;
 }
-
-
-.container{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-
-}
-
-h1 {
-    text-align: center;
-    
+body{
+    font-family: 'Bree Serif', serif;
 }
 
 
@@ -21,9 +14,12 @@ h1 {
    align-items: center;
    justify-content: space-between;
    padding: 10px 10px;
-   background: #dee0eb; 
+   background: green; 
    box-shadow: 0 5px 15px rgba(0,0,0, 0.06);
-   z-index: 999;
+   position: sticky;
+   top: 0;
+   left:0;
+   
    
 }
 .logo{
@@ -39,19 +35,22 @@ h1 {
 }
 #navbar li{
     list-style: none;
-    padding: 10px;
+    padding-right: 20px;
     
 }
 #navbar li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: black;
     transition: 0.3s;
 }
+.cartt{
+    font-size: 12px;
+}
 #navbar li a:hover,
 #navbar li a.active{
-    color: green;
+    color: rgb(204, 0, 0);
 }
 
 #hero{
@@ -63,7 +62,6 @@ h1 {
     background-position: top 25% right 0;
     padding-left: 50px;
     padding-top: 100px;
-    /*padding: 80px 80px;*/
     padding-top: px;
     display: flex;
     flex-direction: column;
@@ -71,25 +69,39 @@ h1 {
     justify-items: center;
 }
 #hero h4{
-    padding-bottom: 15px;
+    padding-bottom: 2px;
 }
 #hero h1{
     color: green;
+    font-size: 50px;
 }
 #hero button{
-    background-image: url(img/button.png);
-    background-color: transparent;
-    color: black;
-    border: 0;
-    padding 0 80px 14px 65px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 20px;
+   
+    background-color: green; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition: 0.3s;
 
 
 }
+#hero button:hover{
+    background-color:rgb(204, 0, 0);
+    
+}
+#hero button:active{
+    
+    background-color: rgb(122, 2, 2);
+    box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+
+
 p{
     width: 400px
     
