@@ -70,4 +70,7 @@ h1 {
 }
 #hero button{
     background-image: url(img/button.png);
+    background-color: transparent;
+    color: black;
+    padding 14px 80px 14px 65px;
 }
