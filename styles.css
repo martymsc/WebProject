@@ -3,10 +3,6 @@ html{
 }
 
 
-body{
-    text-align: center;
-    color: grey;
-}
 .container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -19,14 +15,42 @@ h1 {
     
 }
 
- /* CSS pro stylizaci seznamu odkazů */
- .seznam-odkazu {
-    list-style-type: none; /* Skryje výchozí odrážky seznamu */
-    padding: 0; /* Odstraní výchozí odsazení */
+
+#header{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 10px;
+   background: #dee0eb; 
+   box-shadow: 0 5px 15px rgba(0,0,0, 0.06);
+   
+}
+.logo{
+    width: 200px;
 }
 
-.seznam-odkazu li {
-    display: inline; /* Odkazy na jednom řádku */
-    margin-right: 10px; /* Odsazení mezi odkazy */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 10px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: green;
+}
+
+#hero{
+    background-image: url(img/background.jpg);
 }
 
