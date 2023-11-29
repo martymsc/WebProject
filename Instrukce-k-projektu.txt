@@ -1,0 +1,24 @@
+Vyberte si každej pls jeden úkol, když pak budete pushovat updaty tak pls napište do komentu jakýho úkolu se to týká.
+
+  
+ 
+ 
+ 
+ A) Vytvoření stránky produktu, stránka na kterou se uživatel webu dostane po kliknutí na obrázek produktu,
+  v našem případě se bude jednat o pizzy. Na stránce bude fotogalerie produktu(třeba 2x obrázek tý pizzy), 
+  dále bych tam dal nějaký paragraf na popis a nějakej nadpis kam příjde cena.  Využijte navigační lištu podle indexu.
+   A vytvořil bych takhle třeba pět stránek s dummy textem a obrázky, 
+ 
+ B) Je potřeba vytvořit stránku která která boude sloužit na brouzdání produktů.
+  bude obsahovat obrázky produktů s jejich jmenem a cenou. Mělo by to být votvořené pomocí flex boxu nebo gridu.
+  Chce to použít stejné obrázky jako v úkolu A) .
+   Chtělo by to pak tuhle stránku nakopírovat aby jedna byla jako obecný přehled produktů a ty 
+   další dáme jako že jsou to kategorie a kjednomu dáme search bar aby to bylo jako výsledky vyhledávání
+ 
+ C) Chce to vytvořit stránku košíku, nvm jestli chceme evidovat co má uživatel v košíku, asi zatím ne :D.
+  Zatím bych udělal dummy stránku košíku.
+ 
+ D)vytvořit třeba dvě stránky které budou následovat chce li uživatel checkoutnout z košíku.
+  Jdna bude něco jako "Zadejte své kontaktní údaje"(takže nějaký textboxy s popisem) a jedna jakože "ok objednáno"
+ 
+ 
