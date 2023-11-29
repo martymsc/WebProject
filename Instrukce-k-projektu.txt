@@ -7,7 +7,7 @@ Vyberte si každej pls jeden úkol, když pak budete pushovat updaty tak pls nap
  A) Vytvoření stránky produktu, stránka na kterou se uživatel webu dostane po kliknutí na obrázek produktu,
   v našem případě se bude jednat o pizzy. Na stránce bude fotogalerie produktu(třeba 2x obrázek tý pizzy), 
   dále bych tam dal nějaký paragraf na popis a nějakej nadpis kam příjde cena.  Využijte navigační lištu podle indexu.
-   A vytvořil bych takhle třeba pět stránek s dummy textem a obrázky, 
+   A vytvořil bych takhle třeba pět stránek s dummy textem a obrázky, (Honza Pešek)
  
  B) Je potřeba vytvořit stránku která která boude sloužit na brouzdání produktů.
   bude obsahovat obrázky produktů s jejich jmenem a cenou. Mělo by to být votvořené pomocí flex boxu nebo gridu.
