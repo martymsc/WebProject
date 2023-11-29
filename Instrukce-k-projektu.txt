@@ -20,5 +20,7 @@ Vyberte si každej pls jeden úkol, když pak budete pushovat updaty tak pls nap
  
  D)vytvořit třeba dvě stránky které budou následovat chce li uživatel checkoutnout z košíku.
   Jdna bude něco jako "Zadejte své kontaktní údaje"(takže nějaký textboxy s popisem) a jedna jakože "ok objednáno"
+
+
  
  
