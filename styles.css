@@ -102,7 +102,32 @@ body{
 }
 
 
-p{
+#hero p{
     width: 400px
     
+}
+#footer {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer p{
+    text-wrap: nowrap;
+}
+.bannerSpacing{
+    margin: 40px 0;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#banner p{
+    text-align: center;
+}
+#banner h4{
+    text-align: center;
 }
