@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping</title>
+    <!--Import ikony z google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Následující sekce obsahuje navigační panel na vrchní straně stránky-->
+        <section id="header" class="container">
+            <a href="#"><img src="img/logo2.png" class="logo" alt=""></a>
+             <section>   
+                <ul id="navbar">
+                    <li><a  href="./index.html" >Home</a></li>
+                    <li><a href="./product_page.html">Products</a></li>
+                    <li><a href="./aboutUs.html">About us</a></li>
+                    <li>  <input type="text" placeholder="" name="search"> </li>
+                    <li>  <button onclick="window.location.href='SR_page.html';"> Vyhledat </button> </li>
+                    <li id = "cartt"><a class="active" href="./cart.html"><span class="material-symbols-outlined">shopping_basket</span></i></a></li>
+                </ul>
+             </section>   
+        </section>
+    <!--sekce "hero" je sekce obsaahující hlavní text na stránce a obrázek pozadí s pizzou-->    
+        <section id="heroShipping">
+            <h2>Please choose your shipping method</h2>
+
+            <style>
+                /* Příklad CSS pro změnu umístění text boxů */
+                .form-container label {
+                    display: block;
+                    flex-direction: column;
+                    margin-bottom: 20px; /* Volitelné nastavení mezery mezi jednotlivými formuláři */
+                }
+        
+                .form-container label {
+                    margin-bottom: 5px; /* Volitelné nastavení mezery mezi popiskem a text boxem */
+                }
+        
+                .form-container input {
+                    width: 30%; /* Šířka 100% pro plné využití šířky kontejneru */
+                    padding: 10px; /* Volitelné nastavení polštáře (padding) pro vylepšení vzhledu */
+                    margin-bottom: 10px; /* Volitelné nastavení mezery mezi text boxy */
+                }
+
+
+        /* Umístění tlačítka doprava */
+        .button-container {
+            text-align: center;
+                }
+            </style>
+
+            <!-- Formulář pro osobní informace -->
+            <div class="form-container">
+                <form>
+                    <h3 style="text-align: left;">Personal information:</h3>
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phoneNumber">Phone number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </form>
+            </div>
+
+            <!-- Formulář pro doručovací adresu -->
+            <div class="form-container">
+                <form>
+                    <h3 style="text-align: left;">Shipping adress:</h3>
+                    <label for="street">Street:</label>
+                    <input type="text" id="street" name="street" required>
+
+                    <label for="zipCode">ZIP Code:</label>
+                    <input type="text" id="zipCode" name="zipCode" required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                </form>
+            </div>
+
+            <!-- Výběr dopravy -->
+    <div class="radio-container">
+        <form>
+            <h3 style="text-align: left;">Shipping method:</h3>
+            <div>
+                <input type="radio" id="standard" name="shipping" value="standard" required>
+                <label for="standard">Standard</label>
+            </div>
+
+            <div>
+                <input type="radio" id="express" name="shipping" value="express" required>
+                <label for="express">Express</label>
+            </div>
+
+            <div>
+                <input type="radio" id="pickup" name="shipping" value="pickup" required>
+                <label for="pickup">Personal pickup</label>
+            </div>
+        </form>
+    </div>
+            <div class="button-container">
+                <button id="otherbutton" onclick="location.href='./payment.html'" type="submit">Proceed to payment</button>
+            </div>
+        </section>
+
+        <section id="banner" class="bannerSpacing ">
+            <h4>Banner text</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nulla itaque quibusdam cum autem voluptates vitaeSDASD
+            </p>
+        </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
