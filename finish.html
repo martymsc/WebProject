@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Payment</title>
     <!--Import ikony z google fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     
@@ -12,7 +12,7 @@
 <body>
     <!--Následující sekce obsahuje navigační panel na vrchní straně stránky-->
         <section id="header" class="container">
-            <a href ="index.html"><img src="img/logo2.png" class="logo" alt=""></a>
+            <a href´="#"><img src="img/logo2.png" class="logo" alt=""></a>
              <section>   
                 <ul id="navbar">
                     <li><a  href="./index.html" >Home</a></li>
@@ -25,25 +25,28 @@
              </section>   
         </section>
     <!--sekce "hero" je sekce obsahující hlavní text na stránce a obrázek pozadí s pizzou-->    
-        <section id="heroCart">
-            <h2>Here you can see the pizzas you have chosen</h2>
-            
-            <p> Nothing is here now! </p>
-            <p> <button id="otherbutton" onclick="location.href='product_page.html'" type="button">Shop Now</button> </p>
-             
-            
-        
+        <section id="heroFinish">
+            <h2>Thank you for your order!</h2>
+            <h3>Your order was successful</h3>
 
+            <style>
+            /* Umístění tlačítka doprostřed */
+        .button-container {
+            text-align: center;
+                }
+            </style>
+
+            <div class="button-container">
+                <button id="otherbutton" onclick="location.href='product_page.html'" type="submit">Back To Shopping</button>
+            </div>
         </section>
 
         <section id="banner" class="bannerSpacing ">
-            <h2 id="white">Our contact informations</h2>
+            <h4>Banner text</h4>
             <p>
-                Phone Number: +1 861 349 743 <br>
-                Adrress:7098 Princeton Street, Richmond, BC V7B 3H6 <br>
-                Email Address: pizza.plaza@yahoo.com
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nulla itaque quibusdam cum autem voluptates vitaeSDASD
             </p>
-            <p>"JEDNÁ SE O STUDENTSKÝ PROJEKT"</p>
+
 
         </section>
 
