@@ -110,8 +110,8 @@ body{
 
 }
 
-.stred {
- align-items: center;
+.vlevo {
+ text-align: left;
 }
 #hero p{
     width: 400px

@@ -12,7 +12,7 @@
 <body>
     <!--Následující sekce obsahuje navigační panel na vrchní straně stránky-->
         <section id="header" class="container">
-            <a href="#"><img src="img/logo2.png" class="logo" alt=""></a>
+            <a href="index.html"><img src="img/logo2.png" class="logo" alt=""></a>
              <section>   
                 <ul id="navbar">
                     <li><a  href="./index.html" >Home</a></li>
@@ -20,7 +20,7 @@
                     <li><a href="./aboutUs.html">About us</a></li>
                     <li>  <input type="text" placeholder="" name="search"> </li>
                     <li>  <button onclick="window.location.href='SR_page.html';"> Vyhledat </button> </li>
-                    <li id = "cartt"><a class="active" href="./cart.html"><span class="material-symbols-outlined">shopping_basket</span></i></a></li>
+                    <li id = "cartt"><a class="active" href="./cart.html"><span class="material-symbols-outlined">shopping_basket</span></i></a></li> 
                 </ul>
              </section>   
         </section>
@@ -55,7 +55,7 @@
             <!-- Formulář pro osobní informace -->
             <div class="form-container">
                 <form>
-                    <h2 style="text-align: left;">Personal information:</h2>
+                    <h2 style="text-align: left;"> Your Personal Information:</h2>
                     <label for="firstName">First name:</label>
                     <input type="text" id="firstName" name="firstName" required>
 
@@ -69,10 +69,11 @@
                     <input type="tel" id="phoneNumber" name="phoneNumber" required>
                 </form>
             </div>
-            <h2>Please select your shipping method</h2>
+         
             <!-- Formulář pro doručovací adresu -->
             <div class="form-container">
                 <form>
+                    <h2 class="vlevo">Please select your shipping method:</h2>
                     <h3 style="text-align: left;">Shipping adress:</h3>
                     <label for="street">Street:</label>
                     <input type="text" id="street" name="street" required>
@@ -106,6 +107,7 @@
         </form>
     </div>
             <div class="button-container">
+                <button id="otherbutton" onclick="location.href='product_detail.html'" type="button">Go Back</button>
                 <button id="otherbutton" onclick="location.href='./payment.html'" type="submit">Proceed To Payment</button>
             </div>
         </section>
