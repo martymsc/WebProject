@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <!--Import ikony z google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Následující sekce obsahuje navigační panel na vrchní straně stránky-->
+        <section id="header" class="container">
+            <a href´="#"><img src="img/logo2.png" class="logo" alt=""></a>
+             <section>   
+                <ul id="navbar">
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a class="active" href="./product_page.html">Products</a></li>
+                    <li><a href="./aboutUs.html">About us</a></li>
+                    <li>  <input type="text" placeholder="" name="search"> </li>
+                    <li>  <button onclick="window.location.href='SR_page.html';"> Vyhledat </button> </li>
+                    <li id = "cartt"><a href="./cart.html"><span class="material-symbols-outlined">shopping_basket</span></i></a></li>
+                </ul>
+             </section>   
+        </section>
+    <!--sekce "hero" je sekce obsaahující hlavní text na stránce a obrázek pozadí s pizzou-->    
+        <section id="heroProductPage">
+            
+            <h1>Our Products</h1>
+            <section class="container">
+            <section>
+                <h2>Pizza Salámová </h2>
+                <h3>(Více Informací)</h3>
+                <img src="https://images.deliveryhero.io/image/fd-cz/Products/380876.jpg??width=400" width="450" height="325">
+            </section>
+            </section>
+        </section>
+
+        <section id="banner" class="bannerSpacing ">
+
+            <h4>Kategorie Pizzy</h4>
+            <p>
+            <a href="product_page_vege.html"> Pro vegetariany </a>
+            <a href="product_page_houby.html"> S houbami </a>
+            <a href="product_page_papri.html"> S paprikou </a>
+            <a href="product_page_maso.html"> S masem </a>
+            <a href="product_page.html"> Všechny Pizzy </a>
+            </p>
+
+
+        </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
