@@ -81,8 +81,18 @@ body{
   display: inline-block;
   font-size: 20px;
   transition: 0.3s;
-
-
+}
+#otherbutton
+{
+    background-color: green; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.3s;
 }
 #hero button:hover{
     background-color:rgb(204, 0, 0);
