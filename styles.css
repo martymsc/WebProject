@@ -136,4 +136,21 @@ body{
 }
 h1 {
 text-align: center;
+color:black;
 }
+h2 {
+text-align: center;
+}
+h3{
+text-align: center;
+}
+.container
+{
+display:flex;
+flex-wrap:wrap;
+}
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+  }
+  }
