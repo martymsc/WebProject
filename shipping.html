@@ -26,7 +26,7 @@
         </section>
     <!--sekce "hero" je sekce obsahující hlavní text na stránce a obrázek pozadí s pizzou-->    
         <section id="heroShipping">
-            <h2>Please choose your shipping method</h2>
+            <h2>Please select your shipping method</h2>
 
             <style>
                 /* Příklad CSS pro změnu umístění text boxů */
@@ -45,7 +45,6 @@
                     padding: 10px; /* Volitelné nastavení polštáře (padding) pro vylepšení vzhledu */
                     margin-bottom: 10px; /* Volitelné nastavení mezery mezi text boxy */
                 }
-
 
         /* Umístění tlačítka doprostřed */
         .button-container {
@@ -91,18 +90,18 @@
         <form>
             <h3 style="text-align: left;">Shipping method:</h3>
             <div>
-                <input type="radio" id="standard" name="shipping" value="standard" required>
-                <label for="standard">Standard</label>
+                <input type="radio" id="standard" name="shipping" value="standard" required checked>
+                <label for="standard">Standard (Estimated Delivery Time 30-60 Minutes.)</label>
             </div>
 
             <div>
                 <input type="radio" id="express" name="shipping" value="express" required>
-                <label for="express">Express</label>
+                <label for="express">Express (Estimated Delivery Time 15-30 Minutes.)</label>
             </div>
 
             <div>
                 <input type="radio" id="pickup" name="shipping" value="pickup" required>
-                <label for="pickup">Personal pickup</label>
+                <label for="pickup">Personal pickup (7098 Princeton Street, Richmond, BC V7B 3H6)</label>
             </div>
         </form>
     </div>

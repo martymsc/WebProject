@@ -11,44 +11,109 @@
 </head>
 <body>
     <!--Následující sekce obsahuje navigační panel na vrchní straně stránky-->
-        <section id="header" class="container">
-            <a href´="#"><img src="img/logo2.png" class="logo" alt=""></a>
-             <section>   
-                <ul id="navbar">
-                    <li><a  href="./index.html" >Home</a></li>
-                    <li><a href="./product_page.html">Products</a></li>
-                    <li><a href="./aboutUs.html">About us</a></li>
-                    <li>  <input type="text" placeholder="" name="search"> </li>
-                    <li>  <button onclick="window.location.href='SR_page.html';"> Vyhledat </button> </li>
-                    <li id = "cartt"><a class="active" href="./cart.html"><span class="material-symbols-outlined">shopping_basket</span></i></a></li>
-                </ul>
-             </section>   
-        </section>
+    <section id="header" class="container">
+        <a href="#"><img src="img/logo2.png" class="logo" alt=""></a>
+        <section>   
+            <ul id="navbar">
+                <li><a  href="./index.html" >Home</a></li>
+                <li><a href="./product_page.html">Products</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li><input type="text" placeholder="" name="search"></li>
+                <li><button onclick="window.location.href='SR_page.html';"> Vyhledat </button></li>
+                <li id="cartt"><a class="active" href="./cart.html"><span class="material-symbols-outlined">shopping_basket</span></i></a></li>
+            </ul>
+        </section>   
+    </section>
+
     <!--sekce "hero" je sekce obsahující hlavní text na stránce a obrázek pozadí s pizzou-->    
-        <section id="heroPayment">
-            <h2 style="text-align: left;">Please choose your payment method</h2>
-            
-            <style>
-            .button-container {
-                text-align: center;
-            }
+    <section id="heroPayment">
+        <h2 style="text-align: left;">Please select your payment method</h2>
+        
+        <style>
+            /* Příklad CSS pro změnu umístění text boxů */
+            .form-container label {
+                    display: block;
+                    flex-direction: column;
+                    margin-bottom: 20px; /* Volitelné nastavení mezery mezi jednotlivými formuláři */
+                }
+        
+                .form-container label {
+                    margin-bottom: 5px; /* Volitelné nastavení mezery mezi popiskem a text boxem */
+                }
+        
+                .form-container input {
+                    width: 30%; /* Šířka 100% pro plné využití šířky kontejneru */
+                    padding: 5px; /* Volitelné nastavení polštáře (padding) pro vylepšení vzhledu */
+                    margin-bottom: 10px; /* Volitelné nastavení mezery mezi text boxy */
+                }
+
+        /* Umístění tlačítka doprostřed */
+        .button-container {
+            text-align: center;
+                }
             </style>
 
-            <div class="button-container">
-            <button id="otherbutton" onclick="location.href='./finish.html'" type="button">Finish The Order</button>
+        <!-- Výběr způsobu platby -->
+        <div class="radio-container">
+            <form>
+                <h3 style="text-align: left;">Payment method:</h3>
+
+                <div>
+                    <input type="radio" id="paypal" name="payment" value="paypal" required checked onclick="hideCreditCardFields()">
+                    <label for="paypal">PayPal</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="creditcard" name="payment" value="creditcard" required onclick="showCreditCardFields()">
+                    <label for="creditcard">Credit Card</label>
+                </div>                
+
+                <!-- Textové pole pro Credit Card -->
+        <div class="form-container" id="creditCardFields" style="display: none;">
+            <h4>Credit Card Information:</h4>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <label for="nameOnCard">Name On Card:</label>
+            <input type="text" id="nameOnCard" name="nameOnCard" required>
+
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="date" id="expirationDate" name="expirationDate" required>
+
+            <label for="Cvv">CVV:</label>
+            <input type="number" id="Cvv" name="Cvv" required>
         </div>
 
-        </section>
+                <div>
+                    <input type="radio" id="cashondelivery" name="payment" value="cashondelivery" required onclick="hideCreditCardFields()">
+                    <label for="cashondelivery">Cash On Delivery (+Fee)</label>
+                </div>
+            </form>
+        </div>
 
-        <section id="banner" class="bannerSpacing ">
-            <h4>Banner text</h4>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nulla itaque quibusdam cum autem voluptates vitaeSDASD
-            </p>
+        <div class="button-container">
+            <button id="otherbutton" onclick="location.href='./finish.html'" type="button">Complete Your Purchase</button>
+        </div>
+    </section>
 
-
-        </section>
+    <section id="banner" class="bannerSpacing ">
+        <h4>Banner text</h4>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nulla itaque quibusdam cum autem voluptates vitaeSDASD
+        </p>
+    </section>
 
     <script src="index.js"></script>
+
+    <script>
+        function showCreditCardFields() {
+            document.getElementById("creditCardFields").style.display = "block";
+        }
+
+        function hideCreditCardFields() {
+            document.getElementById("creditCardFields").style.display = "none";
+        }
+    </script>
 </body>
 </html>
