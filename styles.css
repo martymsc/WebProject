@@ -94,6 +94,10 @@ body{
     font-size: 20px;
     transition: 0.3s;
 }
+#otherbutton:hover{
+    background-color:rgb(204, 0, 0);
+    
+}
 #hero button:hover{
     background-color:rgb(204, 0, 0);
     
@@ -131,6 +135,14 @@ body{
     text-align: center;
     background: green;
 }
+#whitebanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+}
 #banner h4{
     font-size: 30px;
     color: black;
@@ -147,6 +159,9 @@ text-align: center;
 }
 h3{
 text-align: center;
+}
+.special{
+    font-size: 35px;
 }
 .container
 {
