@@ -110,7 +110,9 @@ body{
 
 }
 
-
+.stred {
+ align-items: center;
+}
 #hero p{
     width: 400px
     
