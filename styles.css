@@ -1,90 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
 
-html{
+html {
     color: grey;
 }
-body{
+
+body {
     font-family: 'Bree Serif', serif;
 }
-#header{
-   display:flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 10px 10px;
-   background: green; 
-   box-shadow: 0 5px 15px rgba(0,0,0, 0.06);
-   position: sticky;
-   top: 0;
-   left:0;
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background: green;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
 }
-.logo{
+
+.logo {
     width: 200px;
     padding-left: 20px;
 }
 
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
     padding-right: 80px;
     justify-content: center;
 }
-#navbar li{
+
+#navbar li {
     list-style: none;
     padding-right: 20px;
-    
 }
-#navbar li a{
+
+#navbar li a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
     color: black;
     transition: 0.3s;
 }
-.cartt{
+
+.cartt {
     font-size: 12px;
 }
+
 #navbar li a:hover,
-#navbar li a.active{
+#navbar li a.active {
     color: rgb(204, 0, 0);
 }
 
-#hero{
+#hero {
     background-image: url(img/background2.jpg);
     height: 90vh;
     width: 91.%;
     background-position: 99% 50%;
     background-size: cover;
     background-position: top 25% right 0;
-    padding-left: 50px;
+    padding-left: 20px;
     padding-top: 100px;
-    padding-top: px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-items: center;
 }
-#hero h4{
+
+#hero h4 {
     padding-bottom: 2px;
 }
-#hero h1{
+
+#hero h1 {
     color: green;
-    font-size: 50px;
+    font-size: 40px;
 }
-#hero button{
-   
-  background-color: green; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  transition: 0.3s;
-}
-#otherbutton
-{
-    background-color: green; 
+
+#hero button,
+#otherbutton {
+    background-color: green;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -94,42 +90,45 @@ body{
     font-size: 20px;
     transition: 0.3s;
 }
-#otherbutton:hover{
-    background-color:rgb(204, 0, 0);
-    
+
+#otherbutton:hover {
+    background-color: rgb(204, 0, 0);
 }
-#hero button:hover{
-    background-color:rgb(204, 0, 0);
-    
+
+#hero button:hover {
+    background-color: rgb(204, 0, 0);
 }
-#hero button:active{
-    
+
+#hero button:active {
     background-color: rgb(122, 2, 2);
     box-shadow: 0 5px #666;
-  transform: translateY(4px);
-
+    transform: translateY(4px);
 }
 
 .vlevo {
- text-align: left;
+    text-align: left;
 }
-#hero p{
-    width: 400px
-    
+
+#hero p {
+    width: 100%;
 }
+
 #footer {
-    padding-left: 20px;
+    padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#footer p{
+
+#footer p {
     text-wrap: nowrap;
 }
-.bannerSpacing{
+
+.bannerSpacing {
     margin: 40px 0;
 }
-#banner{
+
+#banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,7 +136,8 @@ body{
     text-align: center;
     background: green;
 }
-#whitebanner{
+
+#whitebanner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,46 +145,91 @@ body{
     text-align: center;
     background: white;
 }
-#banner h4{
+
+#banner h4 {
     font-size: 30px;
     color: black;
 }
-#banner p{
+
+#banner p {
     color: black;
 }
+
 h1 {
-text-align: center;
-color:black;
-}
-h2 {
-text-align: center;
-}
-h3{
-text-align: center;
-}
-.special{
-    font-size: 35px;
-}
-.container
-{
-display:flex;
-flex-wrap:wrap;
-}
-@media (max-width: 800px) {
-    .container {
-      flex-direction: column;
-  }
-  }
-p{
- text-align: center;
- color: black;
+    text-align: center;
+    color: black;
 }
 
-#white
-{
-    color: white;
+h2 {
+    text-align: center;
 }
-.recenzent
-{
-    color: red;
+
+h3 {
+    text-align: center;
+}
+
+.special {
+    font-size: 35px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    #header {
+        padding: 10px 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar {
+        padding-right: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar li {
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        width: 150px;
+        padding-left: 10px;
+    }
+
+    #hero {
+        padding-left: 20px;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    #hero p {
+        width: 100%;
+    }
+
+    #footer {
+        padding-left: 10px;
+    }
+}
+
+.responsiveAboutUs {
+    width: 100%;
+    max-width: 612px;
+    height: auto;
+}
+
+.responsiveProducts {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.responsiveIndex {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }

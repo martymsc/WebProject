@@ -4,53 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your search</title>
-    <!--Import ikony z google fonts-->
+    <!-- Import ikony z google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <!--Následující sekce obsahuje navigační panel na vrchní straně stránky-->
-        <section id="header" class="container">
-            <a href ="index.html"><img src="img/logo2.png" class="logo" alt=""></a>
-             <section>   
-                <ul id="navbar">
-                    <li><a href="./index.html" >Home</a></li>
-                    <li><a class="active" href="./product_page.html">Products</a></li>
-                    <li><a href="./aboutUs.html">About us</a></li>
-                    <li>  <input type="text" placeholder="" name="search"> </li>
-                    <li>  <button onclick="window.location.href='SR_page.html';"> Vyhledat </button> </li>
-                    <li id = "cartt"><a href="./cart.html"><span class="material-symbols-outlined">shopping_basket</span></i></a></li>
-                </ul>
-             </section>   
-        </section>
-    <!--sekce "hero" je sekce obsaahující hlavní text na stránce a obrázek pozadí s pizzou-->    
-        <section id="heroProductPage">
-            <section id="whitebanner" class="bannerSpacing ">
-                <h1  class="special">Our Products</1> 
-                <section>     
-                    <ul id="navbar">
-                        <li><a href="product_page_vege.html" > Pro vegetariany </a></li>
-                        <li><a href="product_page_houby.html"> Pizzy s houbami </a></li>
-                        <li><a href="product_page_papri.html"> Pizzy s paprikou </a></li>
-                        <li><a href="product_page_maso.html"> Pizzy s masem </a></li>
-                        <li><a href="product_page.html"> Všechny pizzy  </a></li>
-                    </ul>
-                 </section> 
-                </section>
-            
-            <h1>Vyhledali jste "salámová pizza" </h1>
-            <section class="container">
-            <section>
-                <ul id="navbar">
-                <li><a href="product_detail.html"><h2>Pizza Salámová </h2></a></li>
-                </ul>
-                <a href="product_detail.html"><img src="https://images.deliveryhero.io/image/fd-cz/Products/380876.jpg??width=400" width="450" height="325"></a>
-            </section>
-            </section>
-        </section>
+    <!-- Navigační panel na vrchní straně stránky -->
+    <section id="header" class="container">
+        <a href="index.html"><img src="img/logo2.png" class="logo" alt=""></a>
+        <section>   
+            <ul id="navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a class="active" href="./product_page.html">Products</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li><input type="text" placeholder="" name="search"></li>
+                <li><button onclick="window.location.href='SR_page.html';">Vyhledat</button></li>
+                <li id="cartt"><a href="./cart.html"><span class="material-symbols-outlined">shopping_basket</span></a></li>
+            </ul>
+        </section>   
+    </section>
 
-        <section id="banner" class="bannerSpacing ">
+    <!-- Sekce "hero" s hlavním textem a obrázkem -->
+    <section id="heroProductPage">
+        <section id="whitebanner" class="bannerSpacing">
+            <h1 class="special">Our Products</h1>
+            <section>     
+                <ul id="navbar">
+                    <li><a href="product_page_vege.html" > Pro vegetariany </a></li>
+                    <li><a href="product_page_houby.html"> Pizzy s houbami </a></li>
+                    <li><a href="product_page_papri.html"> Pizzy s paprikou </a></li>
+                    <li><a href="product_page_maso.html"> Pizzy s masem </a></li>
+                    <li><a href="product_page.html"> Všechny pizzy  </a></li>
+                </ul>
+             </section> 
+            </section>
+
+        <section id="searchResult">
+            <h1>Vyhledali jste "salámová pizza"</h1>
+            <section class="container">
+                <section>
+                    <ul id="navbar">
+                    <li><a href="product_detail.html"><h2>Pizza Salámová </h2></a></li>
+                    </ul>
+                    <a href="product_detail.html">
+                        <img src="https://images.deliveryhero.io/image/fd-cz/Products/380876.jpg??width=400" width="300" height="225" align="left">
+                    </a>
+                </section>
+             </section>
+    </section>
+
+    <!-- Banner s kontaktními informacemi -->
+    <section id="banner" class="bannerSpacing ">
             <h2 id="white">Our contact informations</h2>
             <p>
                 Phone Number: +1 861 349 743 <br>
