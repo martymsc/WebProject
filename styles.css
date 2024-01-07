@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
 
+:root {
+    --main-color: green;
+    --highlight-color: rgb(204, 0, 0);
+    --font-family: 'Bree Serif', serif;
+    --font-size: 16px;
+}
+
 html {
     color: grey;
 }
 
 body {
-    font-family: 'Bree Serif', serif;
+    font-family: var(--font-family);
 }
 
 #header {
@@ -13,7 +20,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px;
-    background: green;
+    background: var(--main-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     position: sticky;
     top: 0;
@@ -51,7 +58,7 @@ body {
 
 #navbar li a:hover,
 #navbar li a.active {
-    color: rgb(204, 0, 0);
+    color: var(--highlight-color);
 }
 
 #hero {
@@ -74,13 +81,13 @@ body {
 }
 
 #hero h1 {
-    color: green;
+    color: var(--main-color);
     font-size: 40px;
 }
 
 #hero button,
 #otherbutton {
-    background-color: green;
+    background-color: var(--main-color);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -92,11 +99,11 @@ body {
 }
 
 #otherbutton:hover {
-    background-color: rgb(204, 0, 0);
+    background-color: var(--highlight-color);
 }
 
 #hero button:hover {
-    background-color: rgb(204, 0, 0);
+    background-color: var(--highlight-color);
 }
 
 #hero button:active {
@@ -134,7 +141,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: green;
+    background: var(--main-color);
 }
 
 #whitebanner {
@@ -177,7 +184,7 @@ h3 {
     flex-wrap: wrap;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     #header {
         padding: 10px 5px;
         flex-direction: column;
@@ -214,12 +221,6 @@ h3 {
     #footer {
         padding-left: 10px;
     }
-}
-
-.responsiveAboutUs {
-    width: 100%;
-    max-width: 612px;
-    height: auto;
 }
 
 .responsiveProducts {
